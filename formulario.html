@@ -1,0 +1,53 @@
+<<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de registro para gimnasio</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="formulario.html">Inscripción</a>
+    </nav>
+    <main>
+      <h1>Formulario de registro para gimnasio</h1>
+
+     <p><b>Ingrese su informcion personal</b></p>
+      <section>
+        <form action="https://httpbin.org/post" method="post">
+          <input type="text" placeholder="Indica tu nombre" name="nombre" />
+          <br />
+          <input type="text" placeholder="Indica tu apellido" name="apellido" />
+          <br />
+          <input type="number" placeholder="Indica tu edad" name="edad" />
+          <br />
+          <input type="password" placeholder="Contraseña de la cuenta" name="password" />
+          <br />
+          <p><b>Selccione su plan de membresia</b></p>
+          <select name="Plan de membresia">
+            <option value="Plan Basico">Acceso al gimnasio</option>
+            <option value="Plan estandar">Gimnasio + clases grupales</option>
+            <option value="Plann premium">Acceso ilimitado + clases + entrenador</option>
+          </select>
+           <br />
+           <p><b>Objetivo de entrenamiento</b></p>
+          <input type="checkbox" name="casilla" value="Perder peso" /> Perder peso 
+          <input type="checkbox" name="casilla" value="Ganar masa muscular" />  Ganar masa muscular
+         <input type="checkbox" name="casilla" value="Mantenerme en forma" />  Mantenerme en forma
+          <br />
+          <p><b>Seleccione su sexo</b></p>
+          <input type="radio" name="genero" value="hombre" /> Hombre
+          <input type="radio" name="genero" value="mujer" /> Mujer
+          <input type="radio" name="genero" value="indefinido" /> Prefiero no contestar
+          <br />
+          <p><b>Informacion medica</b></p>
+          <textarea name="Informacion" placeholder="Informacion medica relevante"></textarea>
+           <br />
+          <button type="submit"><b>Enviar</b></button>
+          <button type="reset"><b>Limpiar</b></button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
